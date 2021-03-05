@@ -1,0 +1,62 @@
+{
+  "schema": {
+    "title": "2019 Year Form",
+    "description": "A simple form example.",
+    "type": "object",
+    "required": [
+      "textBox1",
+      "textBox2",
+      "textBox3",
+      "textBox4",
+      "textBox5",
+      "textBox9"
+    ],
+    "properties": {
+      "textBox1": {
+        "type": "input",
+        "title": "textBox1",
+        "templateOptions": {
+          "label": "textBox1",
+          "placeholder": "textBox100"
+        }
+      },
+      "textBox2": {
+        "type": "input",
+        "title": "textBox2"
+      },
+      "textBox3": {
+        "type": "input",
+        "title": "textBox3"
+      },
+      "textBox4": {
+        "type": "input",
+        "title": "textBox4"
+      },
+      "textBox5": {
+        "type": "input",
+        "title": "textBox5"
+      },
+      "textBox6": {
+        "type": "input",
+        "title": "textBox6"
+      },
+      "textBox7": {
+        "type": "input",
+        "title": "textBox7"
+      },
+      "textBox8": {
+        "type": "input",
+        "title": "textBox8"
+      },
+      "textBox9": {
+        "type": "input",
+        "title": "textBox9"
+      },
+      "textBox10": {
+        "type": "input",
+        "title": "textBox10"
+      }
+    }
+  },
+  "model": {}
+}

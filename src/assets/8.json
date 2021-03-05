@@ -1,0 +1,68 @@
+{
+  "schema": {
+    "title": "2015 Year Form",
+    "description": "A simple form example.",
+    "type": "object",
+    "required": [
+      "firstName",
+      "lastName"
+    ],
+    "properties": {
+      "firstName": {
+        "type": "string",
+        "title": "First name"
+      },
+      "lastName": {
+        "type": "string",
+        "title": "Last name"
+      },
+      "select1": {
+        "type": "string",
+        "title": "Select 1: Enum array",
+        "enum": [
+          "Option 1",
+          "Option 2",
+          "Option 3"
+        ]
+      },
+      "select2": {
+        "type": "string",
+        "title": "Select 1: Enum array",
+        "enum": [
+          "Option 1",
+          "Option 2",
+          "Option 3"
+        ]
+      },
+      "select3": {
+        "type": "string",
+        "title": "Select 3: Radio button",
+        "enum": [
+          "Option 1",
+          "Option 2"
+        ],
+        "widget": {
+          "formlyConfig": {
+            "type": "radio"
+          }
+        }
+      },
+      "select4": {
+        "type": "string",
+        "title": "Select 3: Radio button",
+        "enum": [
+          "Option 1",
+          "Option 2"
+        ],
+        "widget": {
+          "formlyConfig": {
+            "type": "radio"
+          }
+        }
+      }
+    }
+  },
+  "model": {
+    "firstName": "Ali"
+  }
+}

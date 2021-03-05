@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-title>Please Select a year</mat-card-title>
+  <mat-form-field style="margin-bottom: 20px;">
+    <mat-label>form Selector</mat-label>
+    <mat-select (selectionChange)="loadExample($event)" [(value)]="selectedYear" >
+      <mat-option *ngFor="let form of years" [value]="form.value">
+        {{form.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-card>
+<mat-spinner *ngIf="!spinner"></mat-spinner>
+<mat-card *ngIf="falsy" class="mt-4">
+  There is no form for this year
+</mat-card>
+<mat-card *ngIf="!falsy && spinner" class="mt-4">
+  <form [formGroup]="form" (ngSubmit)="submit()" *ngIf="fields">
+    <formly-form [model]="model" [fields]="fields" [options]="options" [form]="form"></formly-form>
+    <button type="submit" class="btn btn-primary submit-button" [disabled]="!form.valid">Submit</button>
+  </form>
+</mat-card>
+
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
